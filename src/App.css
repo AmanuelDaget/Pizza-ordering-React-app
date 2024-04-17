@@ -1,0 +1,139 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  /* margin: 0; */
+  padding: 0;
+}
+.allNavs{
+  background-color: rgb(255, 255, 255); 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+  border-bottom: 1px solid rgba(192, 192, 192, 0.623);
+  box-shadow: 1px 1px 8px 1px silver;
+
+}
+.allNavs .logo{
+  width: 400px;
+  height:150px;
+  border-radius: 15px;
+  margin: 1px 30px;
+  z-index: 3;
+}
+.allNavs .navlinks{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 50px;
+}
+.allNavs .navlinks button{
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: 50px;
+}
+.allNavs .navlinks .menuItems{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.allNavs .navlinks .menuItems .navLink{
+  text-decoration: none;
+  color: black;
+  margin: 2px;
+  padding: 15px 40px;
+}
+.allNavs .navlinks .menuItems .navLink:hover{
+  text-decoration: underline;
+  color: rgb(75, 179, 118);
+}
+.allNavs .navlinks .closeMenuBar {
+  display: none;
+  position: absolute;
+  right: 25px;
+  top: 20px;
+  font-size: 30px;
+  font-weight: 400;
+  z-index: 4;
+  color: rgba(0, 0, 0, 0.76);
+  padding: 1px 8px;
+  border-radius: 5px;
+
+}
+.allNavs .navlinks .closeMenuBar:hover{
+  color: white;
+  background-color: red;
+}
+@media only screen and (max-width: 1500px){
+  .allNavs .navlinks .menuItems{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media only screen and (max-width: 900px){
+     
+}
+@media only screen and (max-width: 768px){
+    .allNavs {
+        justify-content: flex-end;
+        position: relative;
+    }
+    .allNavs .navLink{
+        margin: 0px 20px;
+    }
+    .allNavs .navlinks button{
+       position: fixed;
+       
+    }
+    
+}
+@media only screen and (max-width: 650px){
+    
+    .allNavs{
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        z-index: 2;
+        
+    }
+    .allNavs .logo{
+      width: 100%;
+      margin: 0px;
+
+    }
+    .allNavs .navlinks button{
+      display: block;
+      border: none;
+      background-color: rgba(255, 255, 255, 0);
+      color: rgb(1, 153, 255);
+      font-size: 21px;
+      font-weight: bolder;
+      z-index: 3;
+    }
+  .allNavs .navlinks .menuItems{
+        display: none;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        height: 100%;
+        width: 50%;
+        padding: 70px 0px;
+        background-color: rgb(207, 206, 206);
+        z-index: 3;
+       
+        
+    }
+    .allNavs .navlinks .menuItems .navLink:hover{
+      background-color: rgb(112, 88, 88);
+      color: rgb(255, 255, 255);
+     text-decoration: none;
+      
+    }
+    .allNavs .navlinks .closeMenuBar{
+      display: none;
+    }
+
+}

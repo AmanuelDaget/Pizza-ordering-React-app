@@ -1,0 +1,39 @@
+.allContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 20px;
+}
+.allContainer h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+.order-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 2px solid rgb(216, 214, 214);
+    padding: 5px 10px;
+}
+.order-container img{
+    width: 50px;
+    height: 50px;
+}
+.order-container p{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(26, 25, 25);
+} 
+.order-container button{
+    border: none;
+    background-color: rgb(236, 117, 117);
+    color: white;
+    padding: 8px;
+    margin: 10px;
+    border-radius: 5px;
+}
+.order-container button:hover{
+    background-color: red;
+}
+.deliveryStatus{
+    margin: 10px;
+}

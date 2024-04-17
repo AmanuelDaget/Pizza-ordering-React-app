@@ -1,0 +1,89 @@
+.allDeliveryInfo{
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+    
+} 
+.userInfo{
+    display: flex;
+    flex-direction: column;
+}
+.userInfo h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+.customerInfoForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.two-inputs{
+    display: flex;
+    flex-direction: row;
+}
+.errorMessages {
+    border: 1px solid red;
+    
+}
+input{ 
+    padding: 8px;
+    margin: 20px 10px;
+    border: 2px solid rgb(188, 190, 188);
+    border-radius: 4px;
+    outline: none;
+    width: 100%;
+}
+.totalInfo{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+.totalInfo h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+.totalInfo hr{
+    border: 1px solid rgba(0, 0, 0, 0.192);
+    width: 100%;
+    margin: 0px;
+}
+.priceOfGoods , .deliveryFee,.totalPrice{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: rgba(0, 0, 0, 0.527);
+    margin: 0px;
+}
+.price,.deliveryPrice,.totPrice {
+    color: black;
+    font-weight: 500;
+}
+.totalInfo button{
+    width: 190px;
+    background-color: rgb(250, 92, 92);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    cursor: pointer;
+}
+.totalInfo button:active,.totalInfo button:hover{
+    background-color: red;
+}
+@media only screen and (max-width: 720px){
+    .allDeliveryInfo{
+        display: flex;
+        flex-direction: column;
+    }
+    .two-inputs{ 
+        width: 70%;
+    }
+    input{
+        width: 70%;
+    }
+    .totalInfo{
+        width: 70%;
+    }
+}

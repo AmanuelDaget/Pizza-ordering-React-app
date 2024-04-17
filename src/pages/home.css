@@ -1,0 +1,382 @@
+/* Home page  */
+
+.allHomeElements{
+    padding: 0px;
+    /* margin: 10px; */
+}
+  
+  .first-container {    
+    margin: 40px ;
+    height: 70vh; 
+    background: url("/public/Pizza.jpeg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius: 10px;
+  }
+  .first-container-contents{
+      display: flex; 
+      flex-direction: column;
+      padding: 10px;
+      max-width: 50%;
+      font-family:'Times New Roman', Times, serif;
+  }
+  .first-container-contents h1{
+    color: white;
+  }
+  .first-container-contents p{
+    color: white;
+  }
+  .first-container-contents button{
+    position: absolute;
+     padding: 10px;
+     width: 90px;
+     border: none;
+     border-radius: 5px;
+     background-color: white;
+     color: black;
+     cursor: pointer;
+     bottom: 10%;
+  }
+  .first-container-contents button:active{
+    background-color: rgba(224, 217, 217, 0.548);
+    color: white;
+  }
+  .second-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    padding: 10px;
+    margin: 40px;
+  }
+  .second-container h3{
+    font-size: 27px;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .second-container p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 19px;
+    font-weight: 500;
+  }
+  .menu_items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+  }
+  .menu_items .eachFood{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* width: 200px;
+    height: 250px; */
+    margin: 10px;
+    padding: 15px;
+    /* box-shadow: 2px 2px 17px 5px silver; */
+    border-radius: 15px;
+  }
+  .menu_items .eachFood img{
+    width: 100px;
+    border-radius: 50%;
+  }
+
+  .third-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    padding: 10px;
+    margin: 40px;
+  }
+  .third-container h2{
+    font-size: 27px;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .order_price {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+  }
+  .order_price .order{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 200px;
+    height: 250px;
+    margin: 20px 10px; 
+    box-shadow: 2px 2px 17px 5px silver;
+  }
+  .order_price .order img{
+    width: 100%;
+    height: 150px;
+    padding: 0px;
+  }
+  .order_price .order .nameAndButton{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    position: relative;
+
+  }
+  .order_price .order p{
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0px 0px 0px 15px;
+    width: 85%;
+  }
+  .addToCart,.removeFromCart{
+     position: absolute;
+     bottom: 55px;
+     z-index: 1;
+     width: 25px;
+     height: 25px;
+     font-size: 18px;
+     text-align: center;
+     box-shadow: 1px 1px 6px 3px silver;
+     border: none;
+     border-radius: 50%;
+  }
+  .addToCart{
+    right: 15px;
+    color: green;
+    background-color: rgb(170, 245, 170);
+  }
+  .removeFromCart{
+    right: 70px;
+    color: red;
+    background-color: rgb(247, 162, 162);
+  }
+  .quantity{
+    position: absolute;
+    bottom: 55px;
+    right: 15px;
+    width: 80px;
+    height: 25px;
+    font-size: 16px;
+    text-align: center;
+    background-color: white;
+    color: black;
+    box-shadow: 1px 1px 6px 3px silver;
+    border: none;
+    border-radius: 25px;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color:#151414;
+    margin: 0px;
+  }
+  .footer .horizontalLine{
+    border: 1px solid  rgba(231, 226, 226, 0.219);
+    margin: 40px 15px 5px;
+
+  }
+.footerContent{
+  display: flex;
+  flex-direction: row;
+  padding: 5px 10px 10px 40px;
+}
+
+.footerContent .footerText{
+  display: flex;
+  flex-direction: row;
+   width: 60%;
+   margin:5px 80px 5px 10px;
+}
+.footerContent .footerText .footerImage{
+  width: 30%;
+  margin: 5px 80px 5px 10px;
+  border-radius: 50%;
+}
+.footerContent .footerText p{
+  width: 70%;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(182, 169, 169);
+  text-align:left;
+  text-wrap: wrap;
+}
+.footerContent .linkSection{
+  display: flex;
+  flex-direction: column;
+  justify-content:start;
+  margin: 5px 5px 5px 90px;
+}
+.footerContent .linkSection h2{
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 600;
+  color: rgb(233, 128, 128);
+}
+.footerContent .linkSection .allLinks{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 10px auto;
+}
+.footerContent .linkSection .allLinks a{
+  text-decoration: none;
+  color: rgba(248, 208, 208, 0.788);
+  font-family: 'Times New Roman', Times, serif;
+  padding: 5px;
+}
+.footerContent .linkSection .allLinks a:hover{
+   color:rgb(255, 255, 255);
+}
+.socialIcons{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  margin:10px;
+}
+.socialIcons h2{
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 600;
+  color: rgb(164, 255, 250);
+}
+.socialIcons .allIcons a{
+  text-decoration: none;
+}
+.socialIcons .allIcons .icons{
+   width: 25px;
+   height: 25px;
+   margin: 5px 15px;
+}
+.socialIcons .icons:hover{
+  box-shadow: 1px 1px 8px 2px rgb(121, 117, 117);
+}
+.facebook{
+   background-color: white;
+   color: blue;
+   border-radius: 50%;
+}
+.twitter{
+  color: #1DA1F2;
+}
+.instagram {
+  background-color: #C13584;
+  color: white;
+  border-radius: 5px;
+}
+.whatsapp {
+  background-color: #25D366;
+  color: white;
+  border-radius: 5px;
+}
+.youtube{
+  background-color: white;
+  color: red;
+  border-radius: 5px;
+}
+.copyright{
+  width: 100%;
+  background-color:  #202020;;
+
+}
+.copyright h3{
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 400;
+  /* font-size: 18px; */
+  color: #acaaaa;
+  margin-left: 15%;
+}
+@media only screen and (max-width: 1100px){
+    .footerContent .linkSection{
+      margin: 5px 5px 5px 20px;
+    }
+}
+@media only screen and (max-width: 900px){
+ 
+  .footerContent .footerText{
+    width: 70%;
+    margin:5px 10px 5px 10px;
+ }
+ .footerContent .footerImage{
+  width: 35%;
+  margin: 5px 10px 5px 10px;
+  border-radius: 50%;
+}
+ .footerContent .footerText p{
+  width: 60%;
+ }
+ 
+.footerContent .linkSection{
+  margin: 5px 2px 5px 28px;
+}
+}
+@media only screen and (max-width: 768px){
+  .footerContent{
+    flex-direction: column;
+  }
+  .footerContent .footerText{
+       justify-content: space-between;
+       width: 100%;
+ }
+ .footerContent .footerImage{
+   width: 20%;
+}
+ .footerContent .footerText p{
+  width: 75%;
+ }
+ 
+.footerContent .linkSection{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+.footerContent .linkSection .allLinks{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px 10px;
+  width: 70%;
+}
+}
+  @media only screen and (max-width: 650px){
+       .allHomeElements{
+          margin-top: 15px;
+       }
+       .footerContent{
+        flex-direction: column;
+      }
+      .footerContent .footerText{
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+           width: 100%;
+     }
+     .footerContent .footerImage{
+       width: 20%;
+    }
+     .footerContent .footerText p{
+      justify-content: left;
+      align-items:start;
+      width: 90%;
+     }
+     
+    .footerContent .linkSection{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      
+    }
+    .footerContent .linkSection .allLinks{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 20px 10px;
+      width: 70%;
+    }
+       
+  }
+  
